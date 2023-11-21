@@ -10,6 +10,9 @@ public class Main {
     }
 
     public static String changeData(OffsetDateTime data) {
+        if(data==null){
+            return null;
+        }
         data=data.plusYears(1).minusMonths(1).plusDays(7);
         return data.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).withLocale(Locale.ITALY));
     }
