@@ -29,6 +29,6 @@ class MainTest {
     @Test
     void nullCase(){
         String data=null;
-        assertNull(null,"La data è null");
+        assertNull(data,"La data è null");
     }
 }
